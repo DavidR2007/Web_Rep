@@ -1,0 +1,285 @@
+/*Estilo 1*/
+
+
+/*
+.title_CV { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-size: 4em; 
+    font-weight: bold; 
+    color: #2c3e50; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    border-bottom: 3px solid #3498db; 
+    display: inline-block; 
+    padding-bottom: 10px; 
+  } 
+  
+  .title_h4 { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-size: 1.4em; 
+    font-weight: bold; 
+    color: #34495e; 
+    text-align: left; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin-top: 20px; 
+    margin-bottom: 15px; 
+    border-left: 4px solid #3498db; 
+    padding-left: 10px; 
+  } 
+  
+  .title_h3 { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: #34495e; 
+    text-align: left; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    margin-top: 20px; 
+    margin-bottom: 15px; 
+    border-left: 4px solid #3498db; 
+    padding-left: 10px; 
+  } 
+  
+  .parrf { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-size: 1em; 
+    line-height: 1.6; 
+    color: #2c3e50; 
+    margin-bottom: 15px; 
+    text-align: justify; 
+    padding: 5px 10px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px; 
+  }  
+/*
+/*Estilo 2*/
+
+/*
+.title_CV {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 3.5em;                          
+  font-weight: 700;                         
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;                        
+  text-transform: uppercase;                 
+  letter-spacing: 3px;                       
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.title_h4 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.3em;                               
+  font-weight: 600;                              
+  color: #3498db;                               
+  text-align: left;                               
+  text-transform: uppercase;                      
+  letter-spacing: 1px;                            
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px dashed #9b59b6;
+  padding-bottom: 5px;                           
+}
+
+.title_h3 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.8em;                               
+  font-weight: 600;                              
+  color: #9b59b6;                               
+  text-align: left;                               
+  text-transform: uppercase;                      
+  letter-spacing: 2px;                            
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-left: 6px double #3498db;
+  padding-left: 12px;                            
+}
+
+.parrf {
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif; 
+  font-size: 1em;                            
+  line-height: 1.8;                          
+  color: #333;                            
+  margin-bottom: 18px;                      
+  text-align: justify;                       
+  padding: 12px 15px;                         
+  background: #ffffff;                
+  border-left: 4px solid #3498db;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;                        
+}
+*/
+
+/*Estilo 3 (.js)*/
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+  }
+  /*Margenes de la cabecera y el final de la web (centramos todo el texto)*/
+  header, footer {
+    text-align: center;
+    padding: 20px;
+  }
+  /*Estética nº1 del titulo principal*/
+  #title_CV {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 30px auto;
+  text-align: center;
+
+  
+  display: inline-block;          
+  padding: 20px 40px;             
+  border: 3px solid #3498db;      
+  border-radius: 20px;            
+  background: linear-gradient(90deg, #3498db, #000000);
+  color: white;                   
+
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .title-center {
+  text-align: center; /* centra el bloque hijo */
+}
+
+  #title_CV:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+}
+  
+  /*Estética nº1 de los subtítulos de tamaño <h3>*/
+  .title_h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #34495e;
+    border-left: 6px double #3498db;
+    padding-left: 12px;
+    margin-top: 25px;
+  }
+    /*Estética nº1 de los subtítulos de tamaño <h4>*/
+  .title_h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #3498db;
+    border-bottom: 2px dashed #9b59b6;
+    padding-bottom: 5px;
+    margin-top: 20px;
+  }
+    /*Estética nº1 de los párrafos*/
+  .parrf {
+    font-size: 1em;
+    line-height: 1.6;
+    background: #ffffff;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    margin-left: 5px;
+  }
+  /*Estética nº1 de los botones*/
+  button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: 3px solid #0099ff; 
+    background: #3498db;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  /* Modo oscuro */
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: #f9f9f9;
+  }
+  
+  .dark-mode .parrf {
+    background: #2c2c2c;
+    border-left: 4px solid #ffc400;
+  }
+
+  .dark-mode .title_h3
+  {
+    color: #f9f9f9;
+  }
+  .dark-mode .title_h4
+  {
+    color: white;
+  }
+  .dark-mode a
+  {
+  color: #ffffff;                  
+  text-decoration: underline;      
+  text-decoration-thickness: 1px;  
+  text-underline-offset: 1px;      
+  text-decoration-color: #66b3ff;
+  }
+  .dark-mode #title_CV
+  {
+      background: linear-gradient(90deg, #7700ff, #001969);
+      color: white; 
+      border: 3px solid #391894;  
+  }
+  .dark-mode button
+  {
+    background: #7700ff;
+    border: 3px solid #391894; 
+  }
+  
+/*eliminamos vacíos extraños entre imágenes*/
+.references{
+  display: flex;        
+  gap: 15px;            
+  align-items: center;  
+}
+
+/*ul.parrf porque estamos apuntando a todos los <p> dentro de <ul>*/
+ul.parrf {
+  list-style-type: disc;     
+  padding-left: 30px;  
+  /*list-style-type: none;*/     
+}
+#FotoYo
+{
+  position: absolute;
+  margin: 5px;
+  right: 20px;
+  top: 20px;
+  width: 200px;
+  height: 195px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+#FotoYo:hover {
+  transform: translateY(-10px); /* flota hacia arriba */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra más intensa */
+}
