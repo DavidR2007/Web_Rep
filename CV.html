@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>CV WEB</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" /> <!--Linkeamos el archivo .css al .html para que asi se puedan ver complementos -->
 </head>
 
 <body>
+<header> <!-- Añadimos una cabezera a la web -->
   <img src="Yo.jpg" alt="Foto David Rojas" id="FotoYo">  
       <div class="title-center">
         <h1 id="title_CV"> CV </h1>
       </div>
-
+</header>
   <!--Principio del CV--> 
   <h3 class="title_h3">Info Personal</h3>
   <h4 class="title_h4">Quién soy:</h4>
@@ -48,7 +49,7 @@
 
   <!--Fotos Con Links (LinkedIn y YouTube)-->
   <h4 class="title_h4">Referencias:</h4>
-  <div class="references"><!--Img con <a> </a> si clickamos la foto se nos guiara a un link hola-->
+  <div class="references"><!--Img con <a> </a> si clickamos la foto se nos guiara a un link -->
     <a href="https://es.linkedin.com/in/david-rojas-herreros-7318532b2">
       <img src="https://disinfocode.eu/images/microsoft-linkedin1742289593.png" alt="Linkedin_Src" height="80" width="80">
     </a>
@@ -59,11 +60,11 @@
 
   <!--Botones-->
   <footer>
-    <button id="toggleTheme" onclick="cambiartema()">🌙</button> <!--Boton tema claro/oscuro-->
+    <button id="cambiartema" onclick="cambiartema()">🌙</button> <!--Boton tema claro/oscuro-->
     <button><a href="Links.html">References</a></button> <!-- Boton para ir a .html donde se guardan las referencias que he usado para la web -->
   </footer>
 
 
-  <script src="script.js"></script> <!-- Linkamos el archivo script.js al html para poder usar los botones -->
+  <script src="script.js"> </script> <!-- Linkamos el archivo script.js al html para poder usar los botones -->
 </body>
 </html>
