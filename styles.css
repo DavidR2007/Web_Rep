@@ -24,7 +24,7 @@ body
   letter-spacing: 3px;
   margin: 30px auto;
   text-align: center;
-
+  
   
   display: inline-block;          
   padding: 20px 40px;             
@@ -32,23 +32,23 @@ body
   border-radius: 20px;            
   background: linear-gradient(90deg, #3498db, #002eac);
   color: white;                   
-
+  
   
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .title-center 
   {
-  text-align: center; /* centra el bloque hijo */
+  text-align: center; /* Centramos el tecto, classe que he usado en algunas <div> */
   }
-
+  
   #title_CV:hover 
   {
   transform: translateY(-10px); 
   box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
   }
   
-  /*Estética nº1 de los subtítulos de tamaño <h3>*/
+/* Estética nº1 de los subtítulos de tamaño <h3> */
   .title_h3 
   {
     font-size: 2em;
@@ -56,9 +56,10 @@ body
     color: #34495e;
     border-left: 6px double #3498db;
     padding-left: 12px;
+    padding-left: 10px;
     margin-top: 25px;
   }
-    /*Estética nº1 de los subtítulos de tamaño <h4>*/
+/* Estética nº1 de los subtítulos de tamaño <h4> */
   .title_h4 
   {
     font-size: 1.4em;
@@ -66,9 +67,10 @@ body
     color: #3498db;
     border-bottom: 2px dashed #9b59b6;
     padding-bottom: 5px;
+    padding-left: 10px;
     margin-top: 20px;
   }
-    /*Estética nº1 de los párrafos*/
+/* Estética nº1 de los párrafos */
   .parrf 
   {
     font-size: 1em;
@@ -81,10 +83,10 @@ body
     margin-bottom: 18px;
     margin-left: 5px;
   }
-  /*Estética nº1 de los botones*/
+/* Estética nº1 de los botones */
   button 
   {
-    margin: 10px;
+
     padding: 10px 15px;
     border: 3px solid #0099ff; 
     background: #3498db;
@@ -99,8 +101,10 @@ body
   {
     background: #2980b9;
   }
-  
-  /* Modo oscuro */
+
+
+
+/* Modo oscuro */
   .dark-mode 
   {
     background-color: #1e1e1e;
@@ -112,14 +116,17 @@ body
     background: #2c2c2c;
     border-left: 4px solid #ffc400;
   }
-
+  
   .dark-mode .title_h3
   {
     color: #f9f9f9;
+    border-left: 6px double #ffc400;
+    padding-left: 10px;
   }
   .dark-mode .title_h4
   {
     color: white;
+    padding-left: 10px;
   }
   .dark-mode a
   {
@@ -141,7 +148,23 @@ body
     border: 3px solid #391894; 
   }
   
-/*eliminamos vacíos extraños entre imágenes*/
+  .dark-mode .navs a 
+  {
+    color: black;
+  }
+  
+  .dark-mode .navs a:hover 
+  {
+    background: #7700ff;
+    color: #fff;
+  }
+
+/* Final Dark Mode */
+
+
+
+
+/* Eliminamos vacíos extraños entre imágenes */
 .references
 {
   display: flex;        
@@ -149,12 +172,12 @@ body
   align-items: center;  
 }
 
-/*ul.parrf porque estamos apuntando a todos los <p> dentro de <ul>*/
+/* ul.parrf porque estamos apuntando a todos los <p> dentro de <ul> */
 ul.parrf 
 {
   list-style-type: disc;     
   padding-left: 30px;  
-  /*list-style-type: none;*/     
+/* list-style-type: none; */     
 }
 #FotoYo
 {
@@ -162,8 +185,8 @@ ul.parrf
   margin: 5px;
   right: 20px;
   top: 20px;
-  width: 200px;
-  height: 195px;
+  width: 360px;
+  height: 350px;
   border-radius: 15px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -175,7 +198,7 @@ ul.parrf
 #FotoYo:hover 
 {
   transform: translateY(-10px); /* flota hacia arriba */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /*sombra*/
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* sombra */
 }
 
 #FotoLogos
@@ -190,3 +213,30 @@ ul.parrf
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
+
+.navs 
+{
+  display: flex;
+  justify-content: center;   
+  gap: 20px;                
+  margin-top: 15px;
+}
+
+.navs a 
+{
+  text-decoration: none;
+  color: black;
+  background-color: #bdc3c7;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.navs a:hover 
+{
+  background: #3498db;
+  color: #fff;
+}
+
+

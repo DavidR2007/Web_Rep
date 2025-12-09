@@ -12,43 +12,55 @@
       <div class="title-center">
         <h1 id="title_CV"> CV </h1>
       </div>
+  <nav class="navs">
+    <a href="Links.html"> Links 🔃 </a>  <!-- Link en un menú de navegación para ir a .html donde se guardan las referencias que he usado para la web -->
+    <a href="#info_personal"> Información Personal 👨‍💻 </a>
+    <a href="#estudios"> Estudios 📚 </a>
+    <a href="#EXTRA"> Extra 🆙 </a>
+    <button id="cambiartema" onclick="cambiartema()"> 🌙 </button> <!--Boton tema claro/oscuro-->
+  </nav>
 </header>
+
+<main>
+
   <!--Principio del CV--> 
-  <h3 class="title_h3">Info Personal</h3>
-  <h4 class="title_h4">Quién soy:</h4>
+  <h3 class="title_h3" id="info_personal">Info Personal </h3>
+  <h4 class="title_h4">Quién soy: </h4>
 <!-- Explicación Corta (uso de <br>)-->
   <p class="parrf">
-    Mi nombre es David Rojas Herreros.<br>
+    Mi nombre es David Rojas Herreros. <br>
     Tengo 18 años y actualmente vivo en Sant Feliu de Llobregat.
   </p>
 <!--Estudios Actuales Lista y parrafo-->
-  <h4 class="title_h3">Estudios actuales (2025):</h4>
+  <h4 class="title_h3" id="estudios">Estudios actuales (2025): </h4>
 
-  <p class="parrf">Los estudios que he cursado hasta el momento serían:</p>
+  <p class="parrf">Los estudios que he cursado hasta el momento serían: </p>
   <ul class="parrf"> <!-- Lista de Estudios (<ul> </ul> y <li> </li>) -->
-    <li>ESO (Educación Secundaria Obligatoria)</li>
-    <li>CFGM SMIX (Ciclo Formativo de Grado Medio en Sistemas MicroInformáticos y Redes)</li>
-    <li>CFGS DAMVIOD (2025-2027)</li>
+    <li>ESO (Educación Secundaria Obligatoria) </li>
+    <li>CFGM SMIX (Ciclo Formativo de Grado Medio en Sistemas MicroInformáticos y Redes) </li>
+    <li>CFGS DAMVIOD (2025-2027) </li>
   </ul>
 
   <!--Experiencia Laboral-->
-  <h4 class="title_h4">Experiencia:</h4>  
+  <h4 class="title_h4">Experiencia: </h4>  
   <p class="parrf"> <!--Parrafo Experiencia Laboral-->
     Actualmente no he trabajado como tal, pero sí he hecho prácticas.  
     En el centro que hice prácticas durante un total de 8 meses se llamaba "Instituto Torre de la Miranda".
   </p>
 
-  <h4 class="title_h4">Aficiones:</h4>  
+  <h3 class=" title_h3" id="EXTRA"> EXTRA </h3>
 
-  <p class="parrf">En mi tiempo libre aprovecho para:</p>
-  <ul class="parrf"><!--Lista de Aficiones con links-->
-    <li><a href="https://th.bing.com/th/id/R.24dff2f067c79deb9e51951b917cd1fa?rik=9HX6om5cn83NYg&pid=ImgRaw&r=0">Leer mangas</a></li>
-    <li><a href="https://steamcommunity.com/profiles/76561198398420566">Jugar videojuegos</a></li>
-    <li><a href="https://tse3.mm.bing.net/th/id/OIP.f1sQ4QBYqLc1Ji1ZjHBp1wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">Hacer deporte</a></li>
+  <h4 class="title_h4">Aficiones: </h4>  
+
+  <p class="parrf">En mi tiempo libre aprovecho para: </p>
+  <ul class="parrf"> <!--Lista de Aficiones con links-->
+    <li><a href="https://th.bing.com/th/id/R.24dff2f067c79deb9e51951b917cd1fa?rik=9HX6om5cn83NYg&pid=ImgRaw&r=0">Leer mangas </a> </li>
+    <li><a href="https://steamcommunity.com/profiles/76561198398420566">Jugar videojuegos </a> </li>
+    <li><a href="https://tse3.mm.bing.net/th/id/OIP.f1sQ4QBYqLc1Ji1ZjHBp1wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">Hacer deporte </a> </li>
   </ul>
 
   <!--Fotos Con Links (LinkedIn y YouTube)-->
-  <h4 class="title_h4">Referencias:</h4>
+  <h4 class="title_h4"> Referencias: </h4>
   <div class="references"><!--Img con <a> </a> si clickamos la foto se nos guiara a un link -->
     <a href="https://es.linkedin.com/in/david-rojas-herreros-7318532b2">
       <img src="https://disinfocode.eu/images/microsoft-linkedin1742289593.png" alt="Linkedin_Src" height="80" width="80">
@@ -58,12 +70,14 @@
     </a>
   </div>
 
-  <!--Botones-->
-  <footer>
-    <button id="cambiartema" onclick="cambiartema()">🌙</button> <!--Boton tema claro/oscuro-->
-    <button><a href="Links.html">References</a></button> <!-- Boton para ir a .html donde se guardan las referencias que he usado para la web -->
-  </footer>
+  <video width="250" height="180" controls>
+    <source src="VideoFrt.mp4" >
+  </video>
 
+</main>
+
+  <footer>
+  </footer>
 
   <script src="script.js"> </script> <!-- Linkamos el archivo script.js al html para poder usar los botones -->
 </body>
