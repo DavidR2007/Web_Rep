@@ -1,17 +1,22 @@
 
 
-  //Dark Mode Program
+  //Dark Mode Function
 
-  function cambiartema() {
+  function cambiartema() 
+  {
     const body = document.body;
     const button = document.getElementById("cambiartema");
   
     body.classList.toggle("dark-mode");
   
-    if (body.classList.contains("dark-mode")) {
+    if (body.classList.contains("dark-mode")) 
+    {
       button.textContent = "☀️";
-    } else {
+    } else 
+    {
       button.textContent = "🌙";
     }
   }
+
+  
     

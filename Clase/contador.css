@@ -1,0 +1,65 @@
+/* Fondo general estilo juego */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url("amador.png"); /* tu fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+
+    /* Cursor personalizado */
+    cursor: url("Foto4.png"), auto;
+}
+
+/* Centrado vertical */
+.contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+h1 {
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 3px 3px 5px black;
+}
+
+/* Contador */
+#contador {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* Botón oculto */
+#boton {
+    display: none;
+}
+
+/* Imagen de la galleta */
+#galleta {
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    user-select: none;
+}
+
+/* Animación al hacer clic */
+#galleta:active {
+    transform: scale(0.9);
+}
+
+/* Efecto flotante suave */
+#galleta:hover {
+    transform: scale(1.05);
+}
