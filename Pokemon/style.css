@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    cursor: url("Arrow2.png"), auto;
+}
+
+@font-face {
+    font-family: "PokemonFont";
+    src: url('pokemon_pixel_font.woff');
+}
+
+body
+{
+    text-align: center;
+    background-color: lightgrey;
+
+}
+
+#Starter 
+{
+    text-align: left;
+
+    width: 150px;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+
+    border-radius: 2rem;
+    border: 2px solid black;
+
+}
+
+#MainDiv
+{
+    width: 360px;
+    margin: 0 auto;
+
+    border: 2px solid black;
+    background-color: red;
+
+    border-radius: 20px;
+
+
+    padding: 20px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    transform: scale(2);
+    transform-origin: top center;
+
+}
+
+.pokeballButton img
+{
+    width: 50px;
+    height: auto;
+
+    cursor: url("Hand3.png"), auto;
+
+}
+
+.pokeballButton
+{
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+#Pokemon_Select_Div
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bafarada
+{
+
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: white;
+    font-family: "PokemonFont";
+    
+}

@@ -14,7 +14,7 @@ html, body {
     color: white;
 
     /* Cursor personalizado */
-    cursor: url("Foto4.png"), auto;
+    cursor: url("Arrow2.png"), auto;
 }
 
 /* Centrado vertical */
@@ -52,6 +52,7 @@ h1 {
     cursor: pointer;
     transition: transform 0.1s ease;
     user-select: none;
+    cursor: url("Hand3.png"), auto;
 }
 
 /* Animación al hacer clic */
