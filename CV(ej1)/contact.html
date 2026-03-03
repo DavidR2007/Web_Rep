@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIAL</title>
+    <link rel="stylesheet" href="styles.css" /> <!--Linkeamos el archivo .css al .html para que asi se puedan ver complementos -->
+</head>
+<body id="BodyContact">
+
+        <div id="divli">
+            <div>
+                <h1>Nombre y Apellidos</h1>
+                <input type="text" required>
+            </div>
+            
+            <div>
+                <h1>Correo Electrónico</h1>
+                <input type="email" required>
+            </div>
+            
+            <div>
+                <h1>Fecha de nacimiento</h1>
+                <input type="date" required>
+            </div>
+            
+            <div>
+                <h1>No eres un robot?</h1>
+                <input type="checkbox" required>
+            </div>
+            
+        </div>    
+
+</body>
+
+<footer>
+    <button id="cambiartema" onclick="cambiartema()"> 🌙 </button> <!--Boton tema claro/oscuro-->
+</footer>
+
+<script src="script.js" defer> </script> <!-- Linkamos el archivo script.js al html para poder usar los botones -->
+</html>

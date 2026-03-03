@@ -18,5 +18,19 @@
     }
   }
 
-  
-    
+/* Trivia */
+
+const respostes = document.querySelectorAll(".resposta");
+
+respostes.forEach(resposta => {
+    resposta.addEventListener("click", () => {
+        const valor = resposta.dataset.valor;
+
+        if (valor === "correcte") {
+            resposta.classList.add("resposta-correcta");
+        } else {
+            resposta.classList.add("resposta-incorrecta");
+        }
+    });
+});
+

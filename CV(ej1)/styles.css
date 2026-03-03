@@ -243,4 +243,43 @@ ul.parrf
   color: #fff;
 }
 
+/*Trivial*/
 
+.resposta {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+
+.resposta-correcta {
+  background-color: #8aff8a;
+  color: #0a4d0a;
+  border-color: #00aa00;
+}
+
+.resposta-incorrecta {
+  background-color: #ff8a8a;
+  color: #4d0a0a;
+  border-color: #aa0000;
+}
+
+/* Contact */
+
+#BodyContact
+{
+  text-align: center;
+}
+
+
+
+#divli 
+{
+  display: inline-block;
+  border: 5px solid #ffc400;
+  padding: 15px;
+  margin: 50px;
+  border-radius: 10px;
+}
