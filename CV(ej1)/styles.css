@@ -1,4 +1,4 @@
-/*Estilo 1 (.js)*/
+/*Estilo 1*/
 
 body 
   {
@@ -52,7 +52,7 @@ body
   -o-transform: translateY(-10px);
 }
   
-/* Estética nº1 de los subtítulos de tamaño <h3> */
+/* Estética de los subtítulos de tamaño <h3> */
   .title_h3 
   {
     font-size: 2em;
@@ -63,7 +63,7 @@ body
     padding-left: 10px;
     margin-top: 25px;
   }
-/* Estética nº1 de los subtítulos de tamaño <h4> */
+/* Estética de los subtítulos de tamaño <h4> */
   .title_h4 
   {
     font-size: 1.4em;
@@ -74,7 +74,7 @@ body
     padding-left: 10px;
     margin-top: 20px;
   }
-/* Estética nº1 de los párrafos */
+/* Estética  de los párrafos */
   .parrf 
   {
     font-size: 1em;
@@ -87,7 +87,7 @@ body
     margin-bottom: 18px;
     margin-left: 5px;
   }
-/* Estética nº1 de los botones */
+/* Estética  de los botones */
   button 
   {
 
@@ -105,6 +105,13 @@ body
   {
     background: #2980b9;
   }
+/* Estética de los Div's*/
+
+#CapturaGameDiv
+{
+  text-align: center;
+  margin: 30px;
+}
 
 
 
@@ -180,8 +187,7 @@ body
 ul.parrf 
 {
   list-style-type: disc;     
-  padding-left: 30px;  
-/* list-style-type: none; */     
+  padding-left: 30px;     
 }
 #FotoYo
 {
@@ -283,3 +289,20 @@ ul.parrf
   margin: 50px;
   border-radius: 10px;
 }
+
+#divli button
+{
+  margin-top: 40px;
+}
+
+
+.valid {
+  border: 3px solid green;
+  background-color: #ddffdd;
+}
+
+.invalid {
+  border: 3px solid red;
+  background-color: #ffdddd;
+}
+

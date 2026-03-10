@@ -34,3 +34,24 @@ respostes.forEach(resposta => {
     });
 });
 
+
+
+/* Contact Log-In */
+
+
+const inputNombre = document.querySelector("#input-nombre");
+const inputEmail = document.querySelector("#input-email");
+
+function validarInput(input) {
+    if (input.checkValidity()) {
+        input.classList.add("valid");
+        input.classList.remove("invalid");
+    } else {
+        input.classList.add("invalid");
+        input.classList.remove("valid");
+    }
+}
+
+inputNombre.addEventListener("input", () => validarInput(inputNombre));
+inputEmail.addEventListener("input", () => validarInput(inputEmail));
+

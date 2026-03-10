@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRIVIAL</title>
+    <title>LOG-IN CONTACTO</title>
     <link rel="stylesheet" href="styles.css" /> <!--Linkeamos el archivo .css al .html para que asi se puedan ver complementos -->
 </head>
 <body id="BodyContact">
@@ -11,13 +11,14 @@
         <div id="divli">
             <div>
                 <h1>Nombre y Apellidos</h1>
-                <input type="text" required>
+                <input id="input-nombre" type="text" required>
             </div>
             
             <div>
                 <h1>Correo Electrónico</h1>
-                <input type="email" required>
+                <input id="input-email" type="email" required>
             </div>
+            
             
             <div>
                 <h1>Fecha de nacimiento</h1>
@@ -29,7 +30,11 @@
                 <input type="checkbox" required>
             </div>
             
+
+            <button onclick="alert('Información Enviada')">ENVIAR</button>
+
         </div>    
+
 
 </body>
 
