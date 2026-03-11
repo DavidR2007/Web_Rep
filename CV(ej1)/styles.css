@@ -107,11 +107,45 @@ body
   }
 /* Estética de los Div's*/
 
-#CapturaGameDiv
+.carrusel 
 {
-  text-align: center;
-  margin: 30px;
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
 }
+
+.carrusel ul 
+{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 300%; /* 3 imágenes */
+  animation: slide 18s infinite ease-in-out;
+}
+
+.carrusel li 
+{
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.carrusel img 
+{
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide 
+{
+  0%   { margin-left: 0%; }
+  33%  { margin-left: -100%; }
+  66%  { margin-left: -200%; }
+  100% { margin-left: 0%; }
+}
+
+
 
 
 
