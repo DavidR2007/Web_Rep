@@ -1,27 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOOBIES</title>
-    <link rel="stylesheet" href="styles.css" /> <!--Linkeamos el archivo .css al .html para que asi se puedan ver complementos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hobbies</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <header>
+    <nav class="navs">
+      <a href="CV.html">CV 🖥️</a>
+      <a href="Links.html">Links 🔃</a>
+      <a href="contact.html">Contacta conmigo 👨‍💻</a>
+      <a href="trivial.html">Extra 🆙</a>
+      <button id="cambiartema" onclick="cambiartema()">🌙</button>
+    </nav>
+  </header>
 
-    <button id="cambiartema" onclick="cambiartema()"> 🌙 </button> <!--Boton tema claro/oscuro-->
+  <main>
 
-    <h3 class=" title_h3" id="EXTRA"> EXTRA </h3>
+    <section aria-labelledby="titulo-aficiones">
+        <h4 class="title_h4" id="titulo-aficiones">Aficiones</h4>
+      
+        <p class="parrf">En mi tiempo libre aprovecho para:</p>
+      
+        <div class="carrusel-hobbies">
+          <ul>
+            <li>
+                <!-- Figure es una etiqueta que se usa para crear una figura con una imagen y un caption (descripcion de la imagen)-->
+              <figure>
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2n2uej3b217bh64fchfgsr7b1c/-S897-FWEBP" alt="Leer mangas" />
+                <figcaption>Leer mangas: Apreciar una buena historia y ilustraciones de calidad también es un pasatiempo para mi.</figcaption>
+              </figure>
+            </li>
+      
+            <li>
+              <figure>
+                <img src="https://static.wikia.nocookie.net/blasphemous/images/1/14/Blasphemous_2_Cover.jpg/revision/latest?cb=20230825085635&path-prefix=es" alt="Jugar videojuegos" />
+                <figcaption>Jugar videojuegos: Disfruto de una buena historia y de la adrenalina de los juegos competitivos.</figcaption>
+              </figure>
+            </li>
+      
+            <li>
+              <figure>
+                <img src="https://fotografias.larazon.es/clipping/cmsimages02/2019/08/09/5C911ABF-45B3-448C-A7ED-29B9CF5A2DC0/98.jpg?crop=1031,580,x0,y4&width=1900&height=1069&optimize=low&format=webply" alt="Hacer deporte" />
+                <figcaption>Hacer deporte: Nunca es malo mantenerse activo y despejar la mente.</figcaption>
+              </figure>
+            </li>
+      
+            <!-- Duplicamos la primera tarjeta para que el bucle sea suave 1-2-3-1-2-3... -->
+            <li>
+              <figure>
+                <img src="https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2n2uej3b217bh64fchfgsr7b1c/-S897-FWEBP" alt="Leer mangas" />
+                <figcaption>Leer mangas: Disfruto de una buena historia y de la adrenalina de los juegos competitivos.</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+  </main>
 
-    <h4 class="title_h4">Aficiones: </h4>  
+  <footer class="site-footer">
+    <p>David Rojas Herreros · DAMVIOD1</p>
+  </footer>
 
-    <p class="parrf">En mi tiempo libre aprovecho para: </p>
-        <ul class="parrf"> <!--Lista de Aficiones con links-->
-        <li><a href="https://th.bing.com/th/id/R.24dff2f067c79deb9e51951b917cd1fa?rik=9HX6om5cn83NYg&pid=ImgRaw&r=0">Leer mangas </a> </li>
-        <li><a href="https://steamcommunity.com/profiles/76561198398420566">Jugar videojuegos </a> </li>
-        <li><a href="https://tse3.mm.bing.net/th/id/OIP.f1sQ4QBYqLc1Ji1ZjHBp1wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">Hacer deporte </a> </li>
-    </ul>
+  <script src="script.js" defer></script>
 </body>
-
-
-<script src="script.js" defer> </script> <!-- Linkamos el archivo script.js al html para poder usar los botones -->
 </html>

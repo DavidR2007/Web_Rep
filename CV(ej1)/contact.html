@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="styles.css" /> <!--Linkeamos el archivo .css al .html para que asi se puedan ver complementos -->
 </head>
 <body id="BodyContact">
+<header>
+    <nav class="navs">
+        <a href="CV.html"> CV 🖥️ </a> <!-- Link en un menú de navegación para ir a .html donde se guardan las referencias que he usado para la web -->
+        <a href="Links.html"> Links 🔃 </a> 
+        <a href="hobbies.html"> Hobbies 🎰</a>
+        <a href="trivial.html"> Extra 🆙 </a>
+        <button id="cambiartema" onclick="cambiartema()"> 🌙 </button> <!--Boton tema claro/oscuro-->
+    </nav>
+</header>
 
+<main>
         <div id="divli">
             <div>
                 <h1>Nombre y Apellidos</h1>
@@ -35,12 +45,12 @@
 
         </div>    
 
+ </main>
 
-</body>
-
-<footer>
-    <button id="cambiartema" onclick="cambiartema()"> 🌙 </button> <!--Boton tema claro/oscuro-->
-</footer>
+ <footer class="site-footer">
+     <p>David Rojas Herreros · DAMVIOD1</p>
+ </footer>
 
 <script src="script.js" defer> </script> <!-- Linkamos el archivo script.js al html para poder usar los botones -->
+</body>
 </html>

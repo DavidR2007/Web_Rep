@@ -1,19 +1,32 @@
-/*Estilo 1*/
-
+/*Configuración general de la web*/
+html, body
+{
+  height: 100%;
+}
 body 
   {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f4f6f9;
     color: #2c3e50;
     margin: 0;
     padding: 0;
   }
-  /*Margenes de la cabecera y el final de la web (centramos todo el texto)*/
+  
   header, footer 
   {
     text-align: center;
     padding: 20px;
   }
+
+  main
+  {
+    flex: 1;
+  }
+
+
   /*Estética nº1 del titulo principal*/
   #title_CV 
   {
@@ -46,6 +59,8 @@ body
   {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  /* Efecto flotante suave con transform, esta hecho de diferentes formas para que sea compatible con los diferentes navegadores 
+  (es una extension de VSCode)  "css-auto-prefix" */
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
@@ -105,46 +120,50 @@ body
   {
     background: #2980b9;
   }
-/* Estética de los Div's*/
+/* Carrusel*/
 
-.carrusel 
-{
+/* Contenedor que recorta el contenido que se sale (ventana del carrusel) */
+.carrusel {
   width: 1280px;
   height: auto;
   margin: 50px auto 0;
   overflow: hidden;
 }
 
-.carrusel ul 
-{
+/* La lista se muestra en fila (flex) y mide 4 “pantallas”:
+   - 3 imágenes originales + 1 imagen duplicada al final
+   Esta imagen duplicada permite que el salto del final al inicio sea suave
+   y se vea como un bucle 1-2-3-1-2-3 sin rebote. */
+
+.carrusel ul {
   display: flex;
   padding: 0;
   margin: 0;
-  width: 300%; /* 3 imágenes */
-  animation: slide 18s infinite ease-in-out;
+  width: 400%;              
+  animation: slide 18s infinite linear; 
 }
 
-.carrusel li 
-{
+.carrusel li {
   width: 100%;
   list-style: none;
   position: relative;
 }
 
-.carrusel img 
-{
+.carrusel img {
   width: 100%;
   height: auto;
 }
 
-@keyframes slide 
-{
-  0%   { margin-left: 0%; }
-  33%  { margin-left: -100%; }
-  66%  { margin-left: -200%; }
-  100% { margin-left: 0%; }
+/* La animación desplaza todo el carrusel desde 0 hasta -300%:
+   -100%: se ve la 2ª imagen
+   -200%: se ve la 3ª imagen
+   -300%: se ve la copia de la 1ª
+   Cuando la animación vuelve de -300% a 0, pasamos de la copia de la 1ª
+   a la 1ª original, por eso el ojo lo percibe como un bucle continuo. */
+@keyframes slide {
+  0%   { margin-left: 0; }
+  100% { margin-left: -300%; }
 }
-
 
 
 
@@ -330,13 +349,100 @@ ul.parrf
 }
 
 
-.valid {
+.valid 
+{
   border: 3px solid green;
   background-color: #ddffdd;
 }
 
-.invalid {
+.invalid 
+{
   border: 3px solid red;
   background-color: #ffdddd;
 }
 
+/* Carrusel automático de hobbies */
+.carrusel-hobbies 
+{
+  max-width: 1000px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.carrusel-hobbies ul 
+{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 400%;             
+  animation: slide-hobbies 18s infinite linear;
+}
+
+.carrusel-hobbies li 
+{
+  width: 100%;
+  list-style: none;
+}
+
+.carrusel-hobbies figure 
+{
+  margin-left: 60px;
+  margin-right: 60px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrusel-hobbies img 
+{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.carrusel-hobbies figcaption 
+{
+  padding: 15px;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Animación: se mueve siempre hacia la izquierda, bucle 1-2-3-1... */
+@keyframes slide-hobbies 
+{
+  0%   { margin-left: 0; }
+  100% { margin-left: -300%; } 
+}
+
+/* modo oscuro para hobbies */
+.dark-mode .carrusel-hobbies figure 
+{
+  background: #2c2c2c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.dark-mode .carrusel-hobbies figcaption 
+{
+  color: #f9f9f9;
+}
+
+
+/* Footer */
+
+.site-footer {
+  margin-top: 40px;
+  padding: 15px 10px;
+  text-align: center;
+  background: linear-gradient(90deg, #3498db, #002eac);
+  color: #ffffff;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+/* Footer en modo oscuro */
+.dark-mode .site-footer {
+  background: linear-gradient(90deg, #7700ff, #001969);
+}
