@@ -5,7 +5,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    background-image: url("amador.png"); /* tu fondo */
+    background-image: url("amador.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

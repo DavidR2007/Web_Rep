@@ -122,8 +122,8 @@ body
   }
 /* Carrusel*/
 
-/* Contenedor que recorta el contenido que se sale (ventana del carrusel) */
-.carrusel {
+.carrusel 
+{
   width: 1280px;
   height: auto;
   margin: 50px auto 0;
@@ -131,11 +131,12 @@ body
 }
 
 /* La lista se muestra en fila (flex) y mide 4 “pantallas”:
-   - 3 imágenes originales + 1 imagen duplicada al final
-   Esta imagen duplicada permite que el salto del final al inicio sea suave
-   y se vea como un bucle 1-2-3-1-2-3 sin rebote. */
+  - 3 imágenes originales + 1 imagen duplicada al final
+  Esta imagen duplicada permite que el salto del final al inicio sea suave
+  y se vea como un bucle 1-2-3-1-2-3 sin rebote. */
 
-.carrusel ul {
+.carrusel ul 
+{
   display: flex;
   padding: 0;
   margin: 0;
@@ -143,27 +144,69 @@ body
   animation: slide 18s infinite linear; 
 }
 
-.carrusel li {
+.carrusel li 
+{
   width: 100%;
   list-style: none;
   position: relative;
 }
 
-.carrusel img {
+.carrusel img 
+{
   width: 100%;
   height: auto;
 }
 
 /* La animación desplaza todo el carrusel desde 0 hasta -300%:
-   -100%: se ve la 2ª imagen
-   -200%: se ve la 3ª imagen
-   -300%: se ve la copia de la 1ª
-   Cuando la animación vuelve de -300% a 0, pasamos de la copia de la 1ª
+  -100%: se ve la 2ª imagen
+  -200%: se ve la 3ª imagen
+  -300%: se ve la copia de la 1ª
+  Cuando la animación vuelve de -300% a 0, pasamos de la copia de la 1ª
    a la 1ª original, por eso el ojo lo percibe como un bucle continuo. */
-@keyframes slide {
+@keyframes slide 
+{
   0%   { margin-left: 0; }
   100% { margin-left: -300%; }
 }
+
+.multimedia 
+{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.media-container 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.media-card {
+  width: 420px;
+  margin: 40px auto;
+  padding: 25px;
+  color: black;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+.media-card img
+{
+  width: 100px;
+  height: 55px;
+}
+.media-card video,
+.media-card audio {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+
 
 
 
@@ -236,6 +279,14 @@ body
   align-items: center;  
 }
 
+.dark-mode .references .reference_image
+{
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid red;
+}
+
 /* ul.parrf porque estamos apuntando a todos los <p> dentro de <ul> */
 ul.parrf 
 {
@@ -304,7 +355,8 @@ ul.parrf
 
 /*Trivial*/
 
-.resposta {
+.resposta 
+{
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
@@ -313,15 +365,37 @@ ul.parrf
 }
 
 
-.resposta-correcta {
+.resposta-correcta 
+{
   background-color: #8aff8a;
   color: #0a4d0a;
   border-color: #00aa00;
 }
 
-.resposta-incorrecta {
+.resposta-incorrecta 
+{
   background-color: #ff8a8a;
   color: #4d0a0a;
+  border-color: #aa0000;
+}
+
+
+.dark-mode .resposta
+{
+  color: white;
+}
+
+.dark-mode .resposta-correcta
+{
+  background-color: #1f751f;
+  color: #ffffff;
+  border-color: #007000;
+}
+
+.dark-mode .resposta-incorrecta 
+{
+  background-color: #c70000;
+  color: #ffffff;
   border-color: #aa0000;
 }
 
